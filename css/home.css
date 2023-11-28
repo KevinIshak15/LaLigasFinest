@@ -1,0 +1,187 @@
+/*
+Author: Kevin Ishak
+Last Modified: 2023-11-08
+*/
+:root {
+    --primary-color: #fff; 
+    --secondary-color: #333; 
+    --font-family: 'Arial', sans-serif;
+    --placeholder-color: #666;
+}
+
+/* Header Styling */
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem; 
+}
+
+.header-logo {
+    width: 100px; 
+    height: auto;
+}
+
+.header-nav-wrapper ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem; 
+}
+
+.header-nav-wrapper ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1rem; 
+    padding: 0.5rem 1rem; 
+}
+/* Header Styling */
+
+/* Search Bar Styling */
+.search-bar-btn {
+    padding: 8px 12px; 
+    font-size: 20px; 
+    border-radius: 25px; 
+    background-color: var(--primary-color-light); 
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out; 
+    cursor: pointer; 
+}
+
+.search-bar-btn:hover {
+    background-color: var(#f4473e);
+}
+
+.search-bar form input[type="text"]::placeholder {
+    color: var(--placeholder-color);
+    opacity: 1; 
+}
+
+.search-bar {
+    margin: 0 auto; 
+    display: inline-block; 
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search-bar form {
+    display: flex;
+    width: 100%;
+}
+
+.search-bar form input[type="text"] {
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+}
+/* Search Bar Styling */
+
+/* Player Display Styling */
+.players-of-the-week-wrapper {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.player-display {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+.player-display-name {
+    font-size: 1rem; 
+    margin-top: 0.5rem;
+}
+
+.player-display-mini-img {
+    width: 150px;
+    height: 160px;
+    margin-top: 1rem;
+}
+
+.player-display {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.player-display:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.player-display-name {
+    font-size: 1.5rem;
+    font-weight: bold; 
+    color: var(--secondary-color);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; 
+}
+
+.player-display-mini-img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem; 
+}
+
+.player-display-mini-details {
+    font-size: 1.2rem; 
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+/* Player Display Styling */
+
+/* Autocomplete Styling */
+#result {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    border-top: none;
+    top: 100%;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    padding: 0.5rem;
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+}
+
+.list-group {
+    display: block;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    cursor: pointer;
+    background-color: #bab4b4;
+    color: var(--primary-color);
+}
+
+.list-group:hover {
+    background-color: #dad6d6;
+}
+
+.list-group:last-child {
+    border-bottom: none;
+}
+
+.list-group.active, .list-group.active:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #result {
+        width: calc(100% - 20px);
+    }
+
+}
+/* Autocomplete Styling */

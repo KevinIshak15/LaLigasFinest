@@ -1,0 +1,71 @@
+<!-- 
+Author: Kevin Ishak
+Last Modification: 2023-11-06
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LaLigasFinest | Search</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <script type="text/javascript" src="./js/autocomplete.js" defer></script>
+    <script type="text/javascript" src="./js/searchplayers.js" defer></script>
+    <script type="text/javascript" src="./js/togglevisibility.js" defer></script>
+
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="header-wrapper">
+        <a href="home.html">
+            <img class="header-logo" src="imgs/icons/header_logo.png" alt="LaLigasFinest Logo">
+        </a>
+        <nav class="header-nav-wrapper">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a id="selected">Search</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="search-bar">
+            <form id="search-form" action="search.html" method="get" autocomplete="off">
+                <input type="text" id="search" onkeyup="changeInput(this.value)" placeholder="Search player..." class="form-control form-control-lg">
+                <div id="result" class="list-group"></div>
+                <input class="search-bar-btn" type="submit" value="Search">
+            </form>
+        </div> -->
+    </div>
+    <div class="search-results">
+        <h2>Search Results for: <span>Joao</span></h2>
+        <div class="player-result">
+            <h3>14 Joao Felix</h3>
+            <div class="player-card">
+                <img src="imgs/player_logos/joao_felix.png" alt="Joao Felix" class="player-image">
+                <p>Name: Joao Felix</p>
+                <p>Team: FC Barcelona</p>
+                <p>Country: Portugal</p>
+                <p>Position: ST</p>
+                <!-- Stats initially hidden -->
+                <div id="felix-more-info" style="display: none;">
+                    <p>Goals: 5</p>
+                    <p>Assists: 1</p>
+                    <p>Yellow Cards: 3</p>
+                    <p>Red Cards: 0</p>
+                </div>
+                <a href="#!" class="learn-more-button" onclick="toggleVisibility('felix-more-info', this)">Learn More</a>
+            </div>
+        </div>
+        </div> 
+
+        <footer class="footer-wrapper">
+            <div class="footer-content">
+                <p class="footer-text">© 2023 LaLigasFinest. All rights reserved.</p>
+            </div>
+        </footer>
+        
+</body>
+
+</html>
+    

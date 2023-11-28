@@ -1,0 +1,139 @@
+/*
+Author: Kevin Ishak
+Last Modified: 2023-11-08
+*/
+
+/* Header Styling */
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem; 
+}
+
+.header-logo {
+    width: 100px;
+    height: auto;
+}
+
+.header-nav-wrapper ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem; 
+}
+
+.header-nav-wrapper ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.5rem 1rem; 
+}
+/* Header Styling */
+
+/* Team Styling */
+.teams-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.header-logo {
+    width: 100px; 
+    height: auto;
+}
+
+.teams-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.team-wrapper {
+    flex: 0 1 220px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 10px; 
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    background-color: #fff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-wrapper:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
+}
+
+.team-img {
+    width: auto; 
+    height: 80px; 
+    margin-bottom: 8px;
+}
+
+.team-name {
+    font-size: 18px; 
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.team-details button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.team-details button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.team-details {
+    text-align: center;
+    display: none;
+    padding-top: 10px;
+}
+
+.team-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.team-wrapper button {
+    background-color: rgb(206, 215, 223);
+    color: #fff; 
+    border: none;
+    border-radius: 4px; 
+    padding: 10px 20px; 
+    font-size: 0.9rem; 
+    font-weight: 600; 
+    cursor: pointer; 
+    text-transform: uppercase;
+    letter-spacing: 0.05rem; 
+    outline: none; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+    margin-top: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); 
+}
+
+.team-wrapper button:hover,
+.team-wrapper button:focus {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
+}
+
+.team-wrapper button:active {
+    background-color: #004085;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); 
+}
+/* Team Styling */

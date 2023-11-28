@@ -1,0 +1,94 @@
+<!--
+Author: Kevin Ishak
+Last Modification: 2023-11-06
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LaLigasFinest | Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/contactus.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.2/jquery.validate.min.js" defer></script>
+    <script type="text/javascript" src="./js/formvalidation.js" defer></script>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="header-wrapper">
+        <a href="home.html">
+            <img class="header-logo" src="imgs/icons/header_logo.png" alt="LaLigasFinest Logo">
+        </a>
+        <nav class="header-nav-wrapper">    
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a>Search</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a id="selected" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contact-content">
+        <h1>Contact Us!</h1>
+        <div class="contact-method">
+            <a href="https://www.instagram.com">
+                <img src="imgs/icons/instagram.png" alt="Instagram">
+                <p>@LaLigasFinest</p>
+            </a>
+        </div>
+        <div class="contact-method">
+            <a href="https://www.facebook.com">
+                <img src="imgs/icons/facebook.png" alt="Facebook">
+                <p>LaLigasFinest</p>
+            </a>
+        </div>
+        <div class="contact-method">
+            <a href="https://www.youtube.com">
+                <img src="imgs/icons/youtube.png" alt="Youtube">
+                <p>LaLigasFinest Channel</p>
+            </a>
+        </div>
+        <div class="contact-method">
+            <a href="tel:+1234567890">
+                <img src="imgs/icons/phone.png" alt="Phone">
+                <p>+1 234 567 890</p>
+            </a>
+        </div>
+        <div class="contact-method">
+            <a href="mailto:support@laligasfinest.com">
+                <img src="imgs/icons/email.png" alt="Email">
+                <p>support@laligasfinest.com</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>Reach out to an expert</h2>
+        <form id="contact-form">
+            <div class="form-group" action="#" method ="post" onsubmit="submitForm(event)">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete= "on">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete= "on">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required autocomplete= "on"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn" >Send Message</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer-wrapper">
+        <div class="footer-content">
+            <p class="footer-text">© 2023 LaLigasFinest. All rights reserved.</p>
+        </div>
+    </footer>     
+
+</body>
+</html>

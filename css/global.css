@@ -1,0 +1,197 @@
+/*
+Author: Kevin Ishak
+Last Modified: 2023-11-08
+*/
+/* Global Styling */
+:root {
+    --primary-color: #FFFFFF;
+    --primary-color-light: #ffffff;
+    --secondary-color: #9c9c9c;
+    --text-color: #264F54;
+    --text-color-light: #3a7880;
+    --font-family: 'Inter', sans-serif;
+}
+
+::placeholder {
+    color: var(--primary-color-light);
+}
+
+::-ms-input-placeholder { 
+    color: var(--primary-color-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior-y: none;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+html {
+    position: relative;
+    min-height: 100%; 
+}
+/* Global Styling */
+
+/* Header Styling */
+.header-wrapper {
+    width: 100%;
+    height: 60px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-left: 0;
+    background-color: #ff4b44;
+    box-sizing: border-box; 
+}
+
+.header-nav-wrapper ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+}
+
+.header-nav-wrapper ul li {
+    margin-right: 1rem;
+    cursor: pointer;
+    padding: 0px 4px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.header-nav-wrapper ul li:not(.no-hover):hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+#selected {
+    border-bottom: 2px solid var(--primary-color);
+    position: relative;
+    padding-bottom: 1px;
+}
+
+.header-nav-wrapper ul li a {
+    text-decoration: none;
+    color: var(--primary-color-light);
+    transition: all 0.3s ease-in-out;
+}
+
+.header-logo {
+    cursor: pointer;
+    opacity: 90%;
+    transition: opacity 0.5s ease-in-out;
+    height: 100%;
+}
+
+.header-logo:hover {
+    opacity: 100%;
+}
+/* Header Styling */
+
+/* Footer Styling */
+.footer-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-left: 0;
+    color: var(--primary-color-light);
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-social-img {
+    height: 40px;
+    cursor: pointer;
+    padding: 3px;
+    opacity: 80%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.footer-social-img:hover {
+    opacity: 100%;
+}
+
+.footer-social-img[src$="youtube.png"] {
+    height: 32px;
+    padding-top: 1px;
+    padding-left: 2px;
+    margin-bottom: 4px;
+}
+
+.footer-space-global {
+    height: 0rem;
+}
+
+.footer-wrapper {
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    color: var(--primary-color-light);
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-left: 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--primary-color-light);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+}
+/* Footer Styling */
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    .header-nav-wrapper ul li {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-height: 900px) {
+    .footer-space-global {
+        height: 5rem;
+    }
+}
+/* Media Queries */
+

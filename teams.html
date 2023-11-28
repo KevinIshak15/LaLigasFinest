@@ -1,0 +1,244 @@
+<!--
+Author: Kevin Ishak
+Last Modification: 2023-11-06
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LaLigasFinest | Teams</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/teams.css">
+    <script type="text/javascript" src="./js/togglevisibility.js" defer></script>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="header-wrapper">
+        <a href="home.html">
+            <img class="header-logo" src="imgs/icons/header_logo.png" alt="LaLigasFinest Logo">
+        </a>
+        <nav class="header-nav-wrapper">    
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="no-hover"><a>Search</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a id="selected" href="teams.html">Teams</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="teams-container">
+
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/athleticobilbao.png" alt="Athletic Bilbao Logo" class="team-img">
+            <p class="team-name">Athletic Bilbao</p>
+            <button onclick="showTeamDetails('athletic-bilbao-details')">Show Details</button>
+            <div id="athletic-bilbao-details" class="team-details" style="display: none;">
+                <p>Manager : Ernesto Valverde</p>
+                <p>Stadium : San Mamés</p>
+            </div>
+        </div>
+
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/athleticomadrid.png" alt="Atletico Madrid Logo" class="team-img">
+            <p class="team-name">Atletico Madrid</p>
+            <button onclick="showTeamDetails('athletico-madrid-details')">Show Details</button>
+            <div id="athletico-madrid-details" class="team-details" style="display: none;">
+                <p>Manager : Diego Simeone</p>
+                <p>Stadium : Wanda Metropolitano</p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/fcbarcelona.png" alt="FC Barcelona Logo" class="team-img">
+            <p class="team-name">FC Barcelona</p>
+            <button onclick="showTeamDetails('fcbarcelona-details')">Show Details</button>
+            <div id="fcbarcelona-details" class="team-details" style="display: none;">
+                <p>Manager : Xavi Hernandez</p>
+                <p>Stadium : Spotify Camp Nou</p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/realmadrid.png" alt="Real Madrid Logo" class="team-img">
+            <p class="team-name">Real Madrid</p>
+            <button onclick="showTeamDetails('real-madrid-details')">Show Details</button>
+            <div id="real-madrid-details" class="team-details" style="display: none;">
+                <p>Manager : Diego Simeone</p>
+                <p>Stadium : Stadio Bernabeu</p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/sevilla.png" alt="Sevilla Logo" class="team-img">
+            <p class="team-name">Sevilla</p>
+            <button onclick="showTeamDetails('sevilla-details')">Show Details</button>
+            <div id="sevilla-details" class="team-details" style="display: none;">
+                <p>Manager : Diego Alonso</p>
+                <p>Stadium : Estadio Ramon Sanchez Pizjuan</p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/almeria.png" alt="Almeria Logo" class="team-img">
+            <p class="team-name">Almeria</p>
+            <button onclick="showTeamDetails('almeria-details')">Show Details</button>
+            <div id="almeria-details" class="team-details" style="display: none;">
+                <p>Manager : Alberto Lasarte</p>
+                <p>Stadium : Power Horse Stadium</p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/valencia.png" alt="Valencia Logo" class="team-img">
+            <p class="team-name">Valencia</p>
+            <button onclick="showTeamDetails('valencia-details')">Show Details</button>
+            <div id="valencia-details" class="team-details" style="display: none;">
+                <p>Manager : Rubén Baraja</p>
+                <p>Stadium : Mestalla Stadium</p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/realbetis.png" alt="Real Betis Logo" class="team-img">
+            <p class="team-name">Real Betis</p>
+            <button onclick="showTeamDetails('realbetis-details')">Show Details</button>
+            <div id="realbetis-details" class="team-details" style="display: none;">
+                <p>Manager : Manuel Pellegrini</p>
+                <p>Stadium : Benito Villamarín Stadium</p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/realsociedad.png" alt="Real Sociedad Logo" class="team-img">
+            <p class="team-name">Real Sociedad</p>
+            <button onclick="showTeamDetails('realsociedad-details')">Show Details</button>
+            <div id="realsociedad-details" class="team-details" style="display: none;">
+                <p>Manager : Imanol Alguacil</p>
+                <p>Stadium : Reale Arena</p>
+            </div>
+        </div>
+    
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/girona.png" alt="Girona Logo" class="team-img">
+            <p class="team-name">Girona</p>
+            <button onclick="showTeamDetails('girona-details')">Show Details</button>
+            <div id="girona-details" class="team-details" style="display: none;">
+                <p>Manager : Míchel</p>
+                <p>Stadium : Estadi Montilivi</p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/celtavigo.png" alt="Celta Vigo Logo" class="team-img">
+            <p class="team-name">Celta Vigo</p>
+            <button onclick="showTeamDetails('celtavigo-details')">Show Details</button>
+            <div id="celtavigo-details" class="team-details" style="display: none;">
+                <p>Manager : Rafael Benítez</p>
+                <p>Stadium : Estadio de Balaídos</p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/laspalmas.png" alt="Las Palmas Logo" class="team-img">
+            <p class="team-name">Las Palmas</p>
+            <button onclick="showTeamDetails('laspalmas-details')">Show Details</button>
+            <div id="laspalmas-details" class="team-details" style="display: none;">
+                <p>Manager : Garcia Pimienta </p>
+                <p>Stadium : Estadio de Gran Canaria </p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/getafe.png" alt="Getafe Logo" class="team-img">
+            <p class="team-name">Getafe</p>
+            <button onclick="showTeamDetails('getafe-details')">Show Details</button>
+            <div id="getafe-details" class="team-details" style="display: none;">
+                <p>Manager : Pepe Bordalas </p>
+                <p>Stadium : Estadio Coliseum </p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/mallorca.png" alt="Mallorca Logo" class="team-img">
+            <p class="team-name">Mallorca</p>
+            <button onclick="showTeamDetails('mallorca-details')">Show Details</button>
+            <div id="mallorca-details" class="team-details" style="display: none;">
+                <p>Manager : Javier Aguirre </p>
+                <p>Stadium : Estadi Mallorca Son Moix </p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/osasuna.png" alt="Osasuna Logo" class="team-img">
+            <p class="team-name">Osasuna</p>
+            <button onclick="showTeamDetails('osasuna-details')">Show Details</button>
+            <div id="osasuna-details" class="team-details" style="display: none;">
+                <p>Manager : Jagoba Arrasate </p>
+                <p>Stadium : Estadio El Sadar </p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/grenada.png" alt="Granada Logo" class="team-img">
+            <p class="team-name">Granada</p>
+            <button onclick="showTeamDetails('grenada-details')">Show Details</button>
+            <div id="grenada-details" class="team-details" style="display: none;">
+                <p>Manager : Paco Lopez</p>
+                <p>Stadium : Estadio Nuevo Los Carmenes</p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/cadiz.png" alt="Cadiz Logo" class="team-img">
+            <p class="team-name">Cadiz</p>
+            <button onclick="showTeamDetails('cadiz-details')">Show Details</button>
+            <div id="cadiz-details" class="team-details" style="display: none;">
+                <p>Manager : Sergio Gonzalez</p>
+                <p>Stadium : Estadio Nuevo Mirandilla </p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/deportivoalaves.png" alt="Deportivo Alaves Logo" class="team-img">
+            <p class="team-name">Deportivo Alaves</p>
+            <button onclick="showTeamDetails('deportivoalaves-details')">Show Details</button>
+            <div id="deportivoalaves-details" class="team-details" style="display: none;">
+                <p>Manager : Luis Garcia</p>
+                <p>Stadium : Estadio de Mendizorroza </p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/villareal.png" alt="Villarreal Logo" class="team-img">
+            <p class="team-name">Villarreal</p>
+            <button onclick="showTeamDetails('villareal-details')">Show Details</button>
+            <div id="villareal-details" class="team-details" style="display: none;">
+                <p>Manager : Pacheta</p>
+                <p>Stadium : Estadio de la Ceramica</p>
+            </div>
+        </div>
+        
+        <div class="team-wrapper">
+            <img src="imgs/team_logos/rayovallecano.png" alt="Rayo Vallecano Logo" class="team-img">
+            <p class="team-name">Rayo Vallecano</p>
+            <button onclick="showTeamDetails('rayovallecano-details')">Show Details</button>
+            <div id="rayovallecano-details" class="team-details" style="display: none;">
+                <p>Manager : Francisco Rodriquez</p>
+                <p>Stadium : Estadio de Vallecas </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="footer-wrapper">
+        <div class="footer-content">
+            <p class="footer-text">© 2023 LaLigasFinest. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+       

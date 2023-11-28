@@ -1,0 +1,84 @@
+<!--
+Author: Kevin Ishak
+Last Modification: 2023-11-06
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LaLigasFinest | Search</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/players.css">
+    <script type="text/javascript" src="./js/autocomplete.js" defer></script>
+    <script type="text/javascript" src="./js/searchplayers.js" defer></script>
+    <script type="text/javascript" src="./js/togglevisibility.js" defer></script>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="header-wrapper">
+        <a href="home.html">
+            <img class="header-logo" src="imgs/icons/header_logo.png" alt="LaLigasFinest Logo">
+        </a>
+        <nav class="header-nav-wrapper">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="no-hover"><a>Search</a></li>
+                <li><a id="selected" href="players.html">Players</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form id="search-form" method="get" autocomplete="off">
+                <input type="text" id="search" onkeyup="changeInput(this.value)" placeholder="Search player..." class="form-control form-control-lg">
+                <div id="result" class="list-group"></div>
+            </form>
+        </div>
+    </div>
+        
+    <div class="search-results">
+        <div class="player-result">
+            <h3>22 Abdel Abqar</h3>
+            <div class="player-card">
+                <img src="imgs/player_logos/abdel_abqar.jpg" alt="Abdel Abqar Icon" class="player-image">
+                <p>Name: Abdel Abqar</p>
+                <p>Team: Deportivo Alaves</p>
+                <p>Country: Morocco</p>
+                <p>Position: CB</p>
+                <!-- Stats initially hidden -->
+                <div id="abdel-more-info" style="display: none;">
+                    <p>Goals: 0</p>
+                    <p>Assists: 0</p>
+                    <p>Yellow Cards: 2</p>
+                    <p>Red Cards: 1</p>
+                </div>
+                <a class='learn-more-button' onclick="toggleVisibility('abdel-more-info', this)">Learn More</a>
+            </div>
+        </div>
+
+        <div class="player-result">
+            <h3>0 Malcom Adu</h3>
+            <div class="player-card">
+                <img src="imgs/player_logos/malcomadu.png" alt="Malcom Adu Icon" class="player-image">
+                <p>Name: Malcom Adu</p>
+                <p>Team: Athletic Bilbao</p>
+                <p>Country: Spain</p>
+                <p>Position: RW</p>
+                <!-- Stats initially hidden -->
+                <div id="malcom-more-info" style="display: none;">
+                    <p>Goals: 3</p>
+                    <p>Assists: 2</p>
+                    <p>Yellow Cards: 2</p>
+                    <p>Red Cards: 0</p>
+                </div>
+                <a class='learn-more-button' onclick="toggleVisibility('malcom-more-info', this)">Learn More</a>
+            </div>
+        </div>
+        <footer class="footer-wrapper">
+            <div class="footer-content">
+                <p class="footer-text">© 2023 LaLigasFinest. All rights reserved.</p>
+            </div>
+        </footer>
+</body>
+</html>
+    
