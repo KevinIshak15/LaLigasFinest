@@ -1,0 +1,103 @@
+<!--
+Author: Kevin Ishak
+Last Modification: 2023-11-06
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>LaLigasFinest | Home</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+        <!-- I wanted to use the same searchbar styling and this way was an easy way to reuse code with minimal changes -->
+        <link rel="stylesheet" type="text/css" href="css/search.css">
+        <style>
+            .search-bar {
+                margin: 0 auto;
+                display: inline-block;
+                width: 750px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .search-bar-button {
+                border: 2px solid #333;
+            }
+        </style>
+
+        <script type="text/javascript" src="./js/autocomplete.js" defer></script>
+        <script type="text/javascript" src="./js/searchplayers.js" defer></script>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <div class="header-wrapper">
+            <a href="home.html">
+                <img class="header-logo" src="imgs/icons/header_logo.png" alt="LaLigasFinest Logo">
+            </a> 
+            <div class="header-nav-wrapper">    
+                <ul>
+                    <li><a id="selected" href="home.html">Home</a></li>
+                    <li class="no-hover"><a>Search</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <form id="search-form" action="search.html" method="get" autocomplete="off">
+                <input type="text" id="search" name="query" placeholder="Search player..." class="form-control form-control-lg">
+                <div id="result" class="list-group"></div>
+            </form>
+        </div>
+        </div>
+
+        <div class="players-of-the-week-wrapper">
+            <h1 class="players-of-the-week-header">Players of the Week</h1>
+
+            <div id="players-of-the-week-list">
+                <div class="player-display">
+                    <div class="player-display-name-wrapper">
+                        <p class="player-display-name">Jude Bellingham</p>
+                        <div class="player-display-mini-underline"></div>
+                    </div>
+                    
+                    <img class="player-display-mini-img" src="imgs/player_logos/jude_bellingham.png" alt="Jude Bellingham">
+                    <p class="player-display-mini-details">MOTM</p>
+                </div>
+
+                <div class="player-display">
+                    <div class="player-display-name-wrapper">
+                        <p class="player-display-name">Robert Lewandowski</p>
+                        <div class="player-display-mini-underline"></div>
+                    </div>
+                    
+                    <img class="player-display-mini-img" src="imgs/player_logos/robert_lewandowski.png" alt="Robert Lewandowski">
+                    <p class="player-display-mini-details">Top Scorer</p>
+                </div>
+
+                <div class="player-display">
+                    <div class="player-display-name-wrapper">
+                        <p class="player-display-name">Vinicius Junior</p>
+                        <div class="player-display-mini-underline"></div>
+                    </div>
+                    
+                    <img class="player-display-mini-img" src="imgs/player_logos/vinicius_junior.png" alt="Vinicius Junior">
+                    <p class="player-display-mini-details">Top Assister</p>
+                </div>
+
+            </div>
+        </div>
+  
+        <footer class="footer-wrapper">
+            <div class="footer-content">
+                <p class="footer-text">© 2023 LaLigasFinest. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
